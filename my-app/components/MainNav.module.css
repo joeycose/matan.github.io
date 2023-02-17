@@ -1,0 +1,9 @@
+.navLinks {
+    justify-content: flex-start;
+    font-family: 'Saira', sans-serif;
+  }
+
+  .Card {
+    padding: 14px;
+    border-radius: 10px;
+  }
