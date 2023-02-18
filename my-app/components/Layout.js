@@ -3,7 +3,7 @@ import MainSection from "./MainSection"
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <div style={{background: "black"}}>
             <MainNav />
             <MainSection/>
             {children}

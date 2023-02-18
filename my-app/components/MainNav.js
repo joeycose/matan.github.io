@@ -2,25 +2,24 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavDropdown } from 'react-bootstrap';
-import styles from './MainNav.module.css';
 
 export default function MainNav() {
     return (
-        <Navbar className={`${styles.NavMain}`} collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar style={{ backgroundColor: "black" }} id="NavbarMain" collapseOnSelect expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand className={` ${styles.centeredLink}`} href="#">Matan Evenoff</Navbar.Brand>
+                <Navbar.Brand style={{ padding: "6px" }} href="#">Matan Evenoff</Navbar.Brand>
                 <Navbar.Toggle className="ml-auto" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className={`me-auto ${styles.navLinks}`}>
-                        <Nav.Link href="#twitch">Twitch</Nav.Link>
-                        <Nav.Link href="#instagram">Instagram</Nav.Link>
-                        <Nav.Link href="#youtube">Youtube</Nav.Link>
-                        <Nav.Link href="#discord">Discord</Nav.Link>
-                        <Nav.Link href="#tiktok">TikTok</Nav.Link>
+                    <Nav style={{ fontSize: "15px", color: "white" }} className={`me-auto`}>
+                        <Nav.Link style={{ color: "white" }} href="https://www.twitch.tv/matanevens">Twitch</Nav.Link>
+                        <Nav.Link style={{ color: "white" }} href="https://www.instagram.com/matanevenoff/?hl=en">Instagram</Nav.Link>
+                        <Nav.Link style={{ color: "white" }} href="https://www.youtube.com/channel/UC0zYzxRCvUD5p1XWwE00Zzw">Youtube</Nav.Link>
+                        <Nav.Link style={{ color: "white" }} href="#discord">Discord</Nav.Link>
+                        <Nav.Link style={{ color: "white" }} href="https://www.tiktok.com/@mataneven?lang=en">TikTok</Nav.Link>
                     </Nav>
-                    <Nav className={`${styles.navLinksTwo} d-flex align-items-center`}>
-                        <Nav.Link href="#merch">Merch</Nav.Link>
-                        <Nav.Link href="#positions">Positions</Nav.Link>
+                    <Nav className={`d-flex align-items-center`} style={{ fontSize: "15px" }}>
+                        <Nav.Link style={{ color: "white" }} href="#merch">Merch</Nav.Link>
+                        <Nav.Link style={{ color: "white" }} href="#positions">Positions</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
