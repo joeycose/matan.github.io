@@ -2,7 +2,7 @@ import { Card, Container, Row, Col } from 'react-bootstrap';
 
 function MainSection(props) {
     // Variables
-    let quote = '“Hey Martin, you know real quick I want to thank everybody and say that I think I want to nominate this award to my reformed Orthodox Rabbi Bill Clinton."';
+    let quote = '“Everybody Talks, Nobody Listens."';
     let name = ' - Matan Even';
     let placeholder = 'Array of Recent Videos, Streams, or Tweets';
     return (
